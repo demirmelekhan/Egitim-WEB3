@@ -1,0 +1,28 @@
+[package]
+name = "soroban-token-contract"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"] # Bu satır, akıllı sözleşmeleri WebAssembly (WASM) olarak derlemek için kritik öneme sahiptir.
+
+[dependencies]
+soroban-sdk = { version = "*" }
+soroban-token-sdk = { version = "*" } # Eğer token sözleşmesi yapıyorsan bu da gerekli
+
+[dev_dependencies]
+soroban-sdk = { version = "20.0.0", features = ["testutils"] } # Testler için ek özellikler
+
+[profile.release]
+opt-level = "z" # En küçük dosya boyutu için optimize et
+overflow-checks = true # Tamsayı taşması kontrollerini etkinleştir
+debug = false # Hata ayıklama sembollerini içerme (üretim için)
+strip = "symbols" # Gerekli olmayan sembolleri kaldır
+debug-assertions = false # Hata ayıklama iddialarını devre dışı bırak
+panic = "abort" # Panik durumunda programı sonlandır
+codegen-units = 1 # Derleme birimlerini birleştir (daha iyi optimizasyon için)
+lto = true # Bağlantı zamanı optimizasyonunu etkinleştir (daha iyi optimizasyon için)
+
+[profile.release-with-logs] # Hata ayıklama logları içeren özel bir release profili
+inherits = "release" # "release" profilinin tüm ayarlarını miras al
+debug-assertions = true # Bu profilde hata ayıklama iddialarını etkinleştir
