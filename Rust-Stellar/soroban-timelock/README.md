@@ -89,6 +89,27 @@ Katkılarınızı memnuniyetle karşılarım! Sorularınız veya önerileriniz i
 
 ---
 
+## Deploy Çıktısı
+demir@demirmelekhan:/mnt/c/Users/demir/githdemir@demirmelekhan:/mnt/c/Users/demir/github/Egitim-WEB3/Rust-Stellar/soroban-timelock$ stellar contract deploy \
+  --wasm target/wasm32v1-none/release/soroban_timelock.wasm \
+  --source melek \
+  --network testnet \
+  --alias timelock
+ℹ️ Simulating install transaction…
+ℹ️ Signing transaction: d9a491b3f65063e2c9c5d3c851f09967bc6028630c43323a4cb6bd30c2896092
+🌎 Submitting install transaction…
+ℹ️ Using wasm hash e96a305304e3c775a3855e7925bde6f3a35888f257e0faafc6d0663b3efedfa9
+ℹ️ Simulating deploy transaction…
+ℹ️ Transaction hash is aeca574919548fda953566641f98269f302c79b3a78e09c5ef24845f3b6491ce
+🔗 https://stellar.expert/explorer/testnet/tx/aeca574919548fda953566641f98269f302c79b3a78e09c5ef24845f3b6491ce
+ℹ️ Signing transaction: aeca574919548fda953566641f98269f302c79b3a78e09c5ef24845f3b6491ce
+🌎 Submitting deploy transaction…
+🔗 https://stellar.expert/explorer/testnet/contract/CDS7BJ4MXFE2LFHWETK7V4HIS7TPKTLUMQDMWPBXKCOZXDXPZL3WUZVE
+✅ Deployed!
+CDS7BJ4MXFE2LFHWETK7V4HIS7TPKTLUMQDMWPBXKCOZXDXPZL3WUZVE
+
+---
+
 ## İletişim
 
 * **Geliştirici:** demirmelekhan
