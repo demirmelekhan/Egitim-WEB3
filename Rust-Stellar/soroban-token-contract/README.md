@@ -86,6 +86,27 @@ Bu projeyi yerel makinenizde kurmak ve çalıştırmak için aşağıdaki adıml
 
 ---
 
+## Deploy İşlemi
+
+  --wasm target/wasm32v1-none/release/soroban_token_contract.wasm \
+  --source melek \
+  --network testnet \
+  --alias soroban-token-contract
+ℹ️ Simulating install transaction…
+ℹ️ Signing transaction: e944330240c0840224e10d48855f4b37d155bb7d6e6f7ee31607fe29f767d105
+🌎 Submitting install transaction…
+ℹ️ Using wasm hash fe132fee9b5b03ec1e803bdf9fa151da4a9e21a2874cb772e81cbbbc416166ee
+ℹ️ Simulating deploy transaction…
+ℹ️ Transaction hash is 4f7ec3ba3bc7f73e843d57e804525624874879648db0347171f6369478d030e6
+🔗 https://stellar.expert/explorer/testnet/tx/4f7ec3ba3bc7f73e843d57e804525624874879648db0347171f6369478d030e6
+ℹ️ Signing transaction: 4f7ec3ba3bc7f73e843d57e804525624874879648db0347171f6369478d030e6
+🌎 Submitting deploy transaction…
+🔗 https://stellar.expert/explorer/testnet/contract/CALKIQEBT5USWWG4EMN7B2FY4INXGSFYOR7PNSVX4GTGOAUCTDVSRUDS
+✅ Deployed!
+CALKIQEBT5USWWG4EMN7B2FY4INXGSFYOR7PNSVX4GTGOAUCTDVSRUDS
+
+---
+
 ## Katkıda Bulunma
 
 Katkılarınızı memnuniyetle karşılarım! Sorularınız veya önerileriniz için lütfen bir `Issue` açın veya bir `Pull Request` gönderin.
