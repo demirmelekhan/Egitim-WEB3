@@ -44,6 +44,23 @@ Bu sözleşme, bir satıcının belirli bir fiyat oranıyla token takası için 
 
 ---
 
-## Katkıda Bulunma
+## Deploy işlemi
 
-Katkılar memnuniyetle karşılanır! Bir **Pull Request** göndererek katkıda bulunabilir veya bir **Issue** açarak önerilerinizi paylaşabilirsiniz.
+demir@demirmelekhan:/mnt/c/Users/demir/github/Egitim-WEB3/Rust-Stellar/soroban-single-offer$ stellar contract deploy \
+  --wasm target/wasm32v1-none/release/soroban_single_of
+fer.wasm \
+  --source melek \
+  --network testnet \
+  --alias soroban-single-offer
+ℹ️ Simulating install transaction…
+ℹ️ Signing transaction: 1cadece1141eecbe5ed17e0f626d779b06f609c21a64d9494af8f4e116bb6534
+🌎 Submitting install transaction…
+ℹ️ Using wasm hash 1f5dc811561df2d67fb1fd176ff1ad9f1a9b5c3595ca6d190cc9fef7551e9d4f
+ℹ️ Simulating deploy transaction…
+ℹ️ Transaction hash is 7287dea1126e5fb00fd7f8aa38150a5b3fc111233dae98d60b23e184a55b13fb
+🔗 https://stellar.expert/explorer/testnet/tx/7287dea1126e5fb00fd7f8aa38150a5b3fc111233dae98d60b23e184a55b13fb
+ℹ️ Signing transaction: 7287dea1126e5fb00fd7f8aa38150a5b3fc111233dae98d60b23e184a55b13fb
+🌎 Submitting deploy transaction…
+🔗 https://stellar.expert/explorer/testnet/contract/CCN6R3EVY3B4ULHUDW3UMOLFWYL3BOCC2KYLZQF766BH2BSAIVAAODIO
+✅ Deployed!
+CCN6R3EVY3B4ULHUDW3UMOLFWYL3BOCC2KYLZQF766BH2BSAIVAAODIO
