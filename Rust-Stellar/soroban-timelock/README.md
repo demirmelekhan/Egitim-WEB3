@@ -113,4 +113,4 @@ CDS7BJ4MXFE2LFHWETK7V4HIS7TPKTLUMQDMWPBXKCOZXDXPZL3WUZVE
 ## İletişim
 
 * **Geliştirici:** demirmelekhan
-* **GitHub:** [[demirmelekhan](https://github.com/demirmelekhan)] (örneğin: `https://github.com/demirmelekhan`)
+* **GitHub:** [[demirmelekhan](https://github.com/demirmelekhan)] 
