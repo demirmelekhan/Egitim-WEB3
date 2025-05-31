@@ -105,15 +105,10 @@ Bu projeyi yerel makinenizde kurmak ve çalıştırmak için aşağıdaki adıml
 ✅ Deployed!
 CALKIQEBT5USWWG4EMN7B2FY4INXGSFYOR7PNSVX4GTGOAUCTDVSRUDS
 
----
-
-## Katkıda Bulunma
-
-Katkılarınızı memnuniyetle karşılarım! Sorularınız veya önerileriniz için lütfen bir `Issue` açın veya bir `Pull Request` gönderin.
 
 ---
 
 ## İletişim
 
 * **Geliştirici:** demirmelekhan
-* **GitHub:** [[demirmelekhan](https://github.com/demirmelekhan)] (örneğin: `https://github.com/demirmelekhan`)
+* **GitHub:** [[demirmelekhan](https://github.com/demirmelekhan)] 
