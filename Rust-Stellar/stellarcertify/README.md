@@ -40,42 +40,44 @@ Uygulama, sertifika detaylarını doğrudan blockchain'e yazmak yerine, bu detay
 
 ### Başlatmak İçin
 
-```bash
+bash
 git clone https://github.com/demirmelekhan/Egitim-WEB3/tree/489dabf3cbb113fe678425f2a9d6c2defc9238ba/Rust-Stellar/stellarcertify
 cd StellarCertify
 npm install
-npm run dev
+npm run dev 
 
-💡 Nasıl Kullanılır?
-🎓 Sertifika Basımı (Eğitim Merkezi Yöneticisi)
-"Freighter Bağla" butonuna tıklayın.
+## 💡 Nasıl Kullanılır?
+### 🎓 Sertifika Basımı (Eğitim Merkezi Yöneticisi)
+-"Freighter Bağla" butonuna tıklayın.
+-Freighter cüzdanınızda AUTHORIZED_ISSUER_PUBLIC_KEY’e ait hesabın seçili ve fonlanmış olduğundan emin olun.
+-Bağlantı sağlandığında sistem, hesabınızın yetkili olup olmadığını gösterir.
+-"Yeni Sertifika Oluştur" formunu doldurun. Alıcının Stellar Public Key’ini girin.
+-"Sertifika Oluştur" butonuna tıklayın, Freighter imza penceresini onaylayın.
+-Oluşturulan sertifika ID’si ve hash bilgisi ekranda ve konsolda görünür.
 
-Freighter cüzdanınızda AUTHORIZED_ISSUER_PUBLIC_KEY’e ait hesabın seçili ve fonlanmış olduğundan emin olun.
+## 🔍 Sertifika Doğrulama (Herkes İçin)
+-"Sertifika Doğrula" sekmesine gidin.
+-Sertifika ID'sini girin.
+-"Sertifikayı Doğrula" butonuna tıklayın.
+-Sistem, Stellar blockchain’den hash’i çeker ve doğrulama sonucunu gösterir.
 
-Bağlantı sağlandığında sistem, hesabınızın yetkili olup olmadığını gösterir.
+## 🛣️ Gelecek Geliştirmeler
+### 🔐 Tam Doğrulama: 
+Orijinal sertifika detayları girilerek hash karşılaştırması yapılması.
 
-"Yeni Sertifika Oluştur" formunu doldurun. Alıcının Stellar Public Key’ini girin.
+### 🧬 IPFS Entegrasyonu: 
+Sertifika verilerini IPFS'de saklama, zincirde yalnızca CID tutma.
 
-"Sertifika Oluştur" butonuna tıklayın, Freighter imza penceresini onaylayın.
+### 👤 Kimlik Doğrulama: 
+Eğitim kurumu yöneticileri için gelişmiş doğrulama (ör. backend destekli).
 
-Oluşturulan sertifika ID’si ve hash bilgisi ekranda ve konsolda görünür.
+### 🎨 UI/UX İyileştirmeleri: 
+Daha modern, sezgisel arayüz tasarımı.
 
-🔍 Sertifika Doğrulama (Herkes İçin)
-"Sertifika Doğrula" sekmesine gidin.
+### ❗ Hata Yönetimi: 
+Daha açıklayıcı, kullanıcıya özel hata mesajları.
 
-Sertifika ID'sini girin.
+## 📬 İletişim
+*Geliştirici:* demirmelekhan
+📧 GitHub üzerinden ulaşabilirsiniz: github.com/demirmelekhan
 
-"Sertifikayı Doğrula" butonuna tıklayın.
-
-Sistem, Stellar blockchain’den hash’i çeker ve doğrulama sonucunu gösterir.
-
-🛣️ Gelecek Geliştirmeler
-🔐 Tam Doğrulama: Orijinal sertifika detayları girilerek hash karşılaştırması yapılması.
-
-🧬 IPFS Entegrasyonu: Sertifika verilerini IPFS'de saklama, zincirde yalnızca CID tutma.
-
-👤 Kimlik Doğrulama: Eğitim kurumu yöneticileri için gelişmiş doğrulama (ör. backend destekli).
-
-🎨 UI/UX İyileştirmeleri: Daha modern, sezgisel arayüz tasarımı.
-
-❗ Hata Yönetimi: Daha açıklayıcı kullanıcıya özel hata mesajları.
