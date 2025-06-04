@@ -40,11 +40,12 @@ Uygulama, sertifika detaylarını doğrudan blockchain'e yazmak yerine, bu detay
 
 ### Başlatmak İçin
 
-bash
+''' bash
 git clone https://github.com/demirmelekhan/Egitim-WEB3/tree/489dabf3cbb113fe678425f2a9d6c2defc9238ba/Rust-Stellar/stellarcertify
 cd StellarCertify
 npm install
 npm run dev 
+'''
 
 ## 💡 Nasıl Kullanılır?
 ### 🎓 Sertifika Basımı (Eğitim Merkezi Yöneticisi)
@@ -62,19 +63,19 @@ npm run dev
 -Sistem, Stellar blockchain’den hash’i çeker ve doğrulama sonucunu gösterir.
 
 ## 🛣️ Gelecek Geliştirmeler
-### 🔐 Tam Doğrulama: 
+#### 🔐 Tam Doğrulama: 
 Orijinal sertifika detayları girilerek hash karşılaştırması yapılması.
 
-### 🧬 IPFS Entegrasyonu: 
+#### 🧬 IPFS Entegrasyonu: 
 Sertifika verilerini IPFS'de saklama, zincirde yalnızca CID tutma.
 
-### 👤 Kimlik Doğrulama: 
+#### 👤 Kimlik Doğrulama: 
 Eğitim kurumu yöneticileri için gelişmiş doğrulama (ör. backend destekli).
 
-### 🎨 UI/UX İyileştirmeleri: 
+#### 🎨 UI/UX İyileştirmeleri: 
 Daha modern, sezgisel arayüz tasarımı.
 
-### ❗ Hata Yönetimi: 
+#### ❗ Hata Yönetimi: 
 Daha açıklayıcı, kullanıcıya özel hata mesajları.
 
 ## 📬 İletişim
