@@ -1,0 +1,150 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.App-header {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* WalletData Container */
+.walletContainer {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.walletContainer h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.walletContainer p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.walletContainer button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.walletContainer button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.walletContainer button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Connect button */
+.walletContainer button[onClick*="connect"] {
+  background-color: #007bff;
+  color: white;
+}
+.walletContainer button[onClick*="connect"]:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Disconnect button */
+.walletContainer button[onClick*="disconnect"] {
+  background-color: #dc3545;
+  color: white;
+}
+.walletContainer button[onClick*="disconnect"]:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+/* Form Container */
+.formContainer {
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.formContainer h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.formContainer label {
+  text-align: left;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.formContainer input[type="text"] {
+  width: calc(100% - 20px); /* Padding'i hesaba kat */
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formContainer input[type="text"]:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formContainer button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formContainer button[type="submit"]:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.formContainer button[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.formContainer p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.formContainer p.error {
+  color: #dc3545;
+}
+
+.formContainer p.success {
+  color: #28a745;
+}
